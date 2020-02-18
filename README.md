@@ -4,8 +4,8 @@ Minimum ThmemeはCSSフレームワークの[specture](https://picturepan2.githu
 
 ## 基本設定
 
-URL 
-ファイルのダウンロード
+URL <https://mac-okuda.github.io/minimum-theme/>
+ファイルのダウンロード <https://github.com/mac-okuda/minimum-theme/archive/master.zip>
 
 ## ディレクトリ構造
 
@@ -195,22 +195,3 @@ clearfix
 <https://picturepan2.github.io/spectre/layout/responsive.html#responsive-visibility>
 
 
-## その他参考サイト
-### flexboxのレイアウト
-
-- <https://haniwaman.com/flexbox/>
-- <https://niwaka-web.com/flexbox_reverse/>
-- <https://niwaka-web.com/flexbox_reverse02/>
-- <https://www.nxworld.net/tips/flexbox-examples.html>
-- <https://www.kerenor.jp/flexbox-responsive-layout-onepage/>
-- <https://www.kerenor.jp/flexbox-responsive-layout/>
-- <https://pecopla.net/web-column/flexbox-1>
-- <https://01earth.jp/web-create/coding/flexbox/>
-- <https://junjun-web.net/css/3column-cardlayout/>
-- <http://www.webdesignleaves.com/pr/css/css_basic_10.html>
-- <https://parashuto.com/rriver/development/responsive-layout-with-css-grid-and-flexbox#flexbox-responsive-layout>
-- <https://qiita.com/_takwat/items/042250e63de660584816>
-- <https://parashuto.com/rriver/development/how-flex-item-width-is-calculated>
-- <https://oku-log.com/blog/flexbox/>
-- <https://designsupply-web.com/knowledgeside/2889/>
-- <https://cotodama.co/flexbox_responsive/>
