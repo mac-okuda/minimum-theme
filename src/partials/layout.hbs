@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{#block "title"}}{{/block}} | {{ site.title }}</title>
+ {{#block "css"}}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ site.root }}assets/css/style.css">
+  <link rel="stylesheet" href="{{ site.root }}assets/css/develop.css">
+ {{/block}}
+ {{> head-meta }}
+</head>
+
+<body id="top">
+
+{{#block "header"}}
+{{> header }}
+{{/block}}
+
+<main class="main">
+{{> hero-bgImage }}
+
+{{#block "body"}}
+{{/block}}
+
+</main>
+
+{{#block "footer"}}
+{{> footer }}
+{{/block}}
+
+{{#block "js"}}
+    <script src="{{ site.root }}assets/js/jquery.min.js"></script>
+    <script src="{{ site.root }}assets/js/common.js"></script>
+{{/block}}
+
+</body>
+</html>

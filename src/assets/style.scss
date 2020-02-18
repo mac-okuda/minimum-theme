@@ -1,0 +1,12 @@
+// Example of project-name.scss
+// Define variables to override default ones
+
+//$primary-color: #2e5bec;
+//$dark-color: #3e396b;
+$base-font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+$min-font-family: "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "Roboto Slab" , Garamond , "Times New Roman" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , "Sawarabi Mincho" , serif;
+
+// Import full Spectre source code
+@import "./scss/spectre";
+@import "./scss/spectre-exp";
+@import "./scss/spectre-icons";

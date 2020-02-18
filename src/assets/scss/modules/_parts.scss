@@ -1,0 +1,47 @@
+/* container */
+
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: $size-xl) {
+  .container {
+    max-width: 1024px;
+    width: 1024px;
+  }
+}
+
+/* header*/
+
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 3.2rem;
+  right: 0;
+  /* width: 100%;*/
+  z-index: 105;
+  background: #fff;
+}
+
+
+
+.bg-gray {
+  background: #f7f8f9 !important;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}

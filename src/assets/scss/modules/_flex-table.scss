@@ -1,0 +1,33 @@
+.flex-table {
+  display: flex;
+}
+
+.flex-th, .flex-td {
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.flex-th {
+  flex: 0 25%;
+  /*font-weight: 600;*/
+}
+
+.flex-td {
+  flex: 1;
+}
+
+@media all and (max-width: $size-md) {
+  .flex-table {
+    flex-direction: column;
+  }
+
+  .flex-td {
+    flex: 100%;
+  }
+
+  .flex-th {
+    flex: 100%;
+    padding: 0.5em 0.75em 0;
+    border-bottom: none;
+  }
+}

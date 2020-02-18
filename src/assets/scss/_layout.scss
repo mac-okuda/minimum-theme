@@ -1,0 +1,188 @@
+// Layout
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  //padding-left: $layout-spacing;
+  //padding-right: $layout-spacing;
+  width: 100%;
+
+  $grid-spacing: ($layout-spacing / ($layout-spacing * 0 + 1)) * $html-font-size;
+
+  &.grid-xl {
+    //max-width: $grid-spacing * 2 + $size-xl;
+    max-width: $size-xl - 140;
+  }
+
+  &.grid-lg {
+    max-width: $grid-spacing * 2 + $size-lg;
+  }
+
+  &.grid-md {
+    max-width: $grid-spacing * 2 + $size-md;
+  }
+
+  &.grid-sm {
+    max-width: $grid-spacing * 2 + $size-sm;
+  }
+
+  &.grid-xs {
+    max-width: $grid-spacing * 2 + $size-xs;
+  }
+}
+
+// Responsive breakpoint system
+.show-xs,
+.show-sm,
+.show-md,
+.show-lg,
+.show-xl {
+  display: none !important;
+}
+
+@media (max-width: $size-xl) {
+.hide-xl {
+    display: none !important;
+  }
+  .show-xl {
+    display: block !important;
+  }
+}
+@media (max-width: $size-lg) {
+  .hide-lg {
+    display: none !important;
+  }
+  .show-lg {
+    display: block !important;
+  }
+}
+@media (max-width: $size-md) {
+  .hide-md {
+    display: none !important;
+  }
+  .show-md {
+    display: block !important;
+  }
+}
+@media (max-width: $size-sm) {
+  .hide-sm {
+    display: none !important;
+  }
+  .show-sm {
+    display: block !important;
+  }
+}
+@media (max-width: $size-xs) {
+  .hide-xs {
+    display: none !important;
+  }
+  .show-xs {
+    display: block !important;
+  }
+}
+// Simple Grid Layout
+
+.col_5 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    width: 20%;
+    padding: 10px;
+
+    > div {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: $size-lg) {
+  .col_5 > div {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: $size-xs) {
+  .col_5 > div {
+    width: 33.33333%;
+  }
+}
+
+.col_4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    width: 25%;
+    padding: 10px;
+
+    > div {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: $size-lg) {
+  .col_4 > div {
+    width: 33.33333%;
+  }
+}
+
+@media screen and (max-width: $size-xs) {
+  .col_4 > div {
+    width: 50%;
+  }
+}
+
+.col_3 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    width: 33.33333%;
+    padding: 10px;
+
+    > div {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: $size-lg) {
+  .col_3 > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: $size-xs) {
+  .col_3 > div {
+    width: 100%;
+  }
+}
+
+.col_2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    width: 50%;
+    padding: 10px;
+
+    > div {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: $size-lg) {
+  .col_2 > div {
+    width: 100%;
+  }
+}
