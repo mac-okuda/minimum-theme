@@ -3,7 +3,7 @@
     "title": "MAC internet",
     "description": "■description■",
     "keywords": "■keywords■",
-    "root": "/",
+    "root": "./",
     "root2": "../",
     "url": "aaaaa.co.jp"
 }
