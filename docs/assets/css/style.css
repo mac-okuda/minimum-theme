@@ -935,18 +935,19 @@ u + u {
 }
 
 /* container */
+/*
 .container {
   margin: 0 auto;
   position: relative;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $size-xl) {
   .container {
     max-width: 1024px;
     width: 1024px;
   }
 }
-
+*/
 /* header*/
 .fixed {
   position: fixed;

@@ -194,4 +194,29 @@ clearfix
 
 <https://picturepan2.github.io/spectre/layout/responsive.html#responsive-visibility>
 
+## 6.container
 
+containerは毎回幅を指定して使う
+
+```
+.container.grid-xl {
+  max-width: 1140px;
+}
+
+.container.grid-lg {
+  max-width: 976px;
+}
+
+.container.grid-md {
+  max-width: 856px;
+}
+
+.container.grid-sm {
+  max-width: 784px;
+}
+
+.container.grid-xs {
+  max-width: 496px;
+}
+
+```
