@@ -10,7 +10,7 @@ var hb = require('gulp-hb'),
     autoprefixer = require("autoprefixer"),
     runSequence = require('run-sequence');
 
-var st_dest = "docs/",
+var st_dest = "dest/",
     st_root = "/gt/",
     st_src = "src/";
 
@@ -42,13 +42,14 @@ gulp.task('css', function(){
   return gulp.src([ st_src + 'assets/style.scss'])
     .pipe(plumber())
     .pipe(sass({outputStyle : 'expanded'}))
-    //.pipe(postcss([autoprefixer({
+    .pipe(postcss([
+      autoprefixer({
       // ☆IEは11以上、Androidは4.4以上
       // その他は最新2バージョンで必要なベンダープレフィックスを付与する設定
         //browsers: ["last 2 versions", "ie >= 11", "Android >= 4.4"],
         //cascade: false
-        //})
-     //]))
+        })
+     ]))
     .pipe(gulp.dest( st_src + 'assets/css'))
     .pipe(minify())
     .pipe(rename({extname: '.min.css'}))
