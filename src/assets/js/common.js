@@ -8,6 +8,20 @@ $(function() {
     });
 });
 
+// ハンバーガーメニュー //
+$(function() {
+  $('.sp_menu').on('click', function() {
+    $(this).toggleClass('active');
+    $("#nav").toggleClass('active');
+  })
+})
+$(function() {
+  $('#nav a').on('click', function() {
+    $('#nav').toggleClass('active');
+    $(".sp_menu").toggleClass('active');
+  })
+});
+
 $(function(){
 
 //fadein etc
